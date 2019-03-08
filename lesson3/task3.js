@@ -32,7 +32,7 @@ function memoization(cb){
 		memoization.cache[fnKey] = {};
 	}
 
-	cacheData = memoization.cache[fnKey];
+	cacheData = cache.set[fnKey];
 
 	return function(...args) {
 		const argumentsKey = args.join(',');
